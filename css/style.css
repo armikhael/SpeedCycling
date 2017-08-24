@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    font-family: 'Ostrich Sans Black', arial;
 }
 a{
     color: #212121;
@@ -12,6 +13,7 @@ a:hover{
 }
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
+    font-size: 18px;
 }
 .navbar-light .navbar-brand {
     color: #fff;
@@ -95,6 +97,11 @@ footer{
 .img-init-sq {
     width: 100%;
 }
+@media (max-width: 900px) {
+  .img-init-sq {
+    width: auto;
+    }
+}
 .se {
     position: absolute;
     top: 10%;
@@ -110,4 +117,20 @@ footer{
 .btn-sc-out:hover{
     background: #efe764;
     color: #212121;
+}
+.btn-sc-out-2{
+    color: #212121;
+    background: #efe764;
+    border-radius: 25px;
+}
+.navbar-light .navbar-toggler {
+    background: #efe764;
+}
+.img-responsive{
+    max-width: 100%; 
+    height: auto;
+    display:block;
+}
+.p-top-10{
+    padding-top: 10px;
 }
