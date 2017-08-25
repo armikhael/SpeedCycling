@@ -1,6 +1,13 @@
-body{
-    overflow-x: hidden;
+nav{
     font-family: 'Ostrich Sans Black', arial;
+}
+body{
+    font-family: 'Gotham';
+    overflow-x: hidden;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gotham';
+    font-weight: 500;
 }
 a{
     color: #212121;
@@ -122,6 +129,8 @@ footer{
     color: #212121;
     background: #efe764;
     border-radius: 25px;
+    display: inherit;
+    margin: 0 auto;
 }
 .navbar-light .navbar-toggler {
     background: #efe764;
@@ -133,4 +142,7 @@ footer{
 }
 .p-top-10{
     padding-top: 10px;
+}
+.italic{
+    font-style: italic;
 }
