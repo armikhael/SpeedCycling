@@ -165,3 +165,13 @@ footer{
     text-align: center;
     font-size: 18px;
 }
+.p-50{
+        padding: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .width-100 {
+        margin: 0 auto;
+        width: 100px;
+    }
+}
