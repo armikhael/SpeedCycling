@@ -32,6 +32,9 @@ a:hover{
 .active-sc-nav{
     border-bottom: 3px solid #efe764;
 }
+.active-sc-nav-black{
+    border-bottom: 3px solid #000;
+}
 footer{
     background-color: #262625!important;
 }
@@ -147,13 +150,7 @@ footer{
     padding-right: 15px;
     padding-left: 15px;
 }
-@font-face {
-    font-family: "Bebas Neue";
-    src: url(../font/bebas/BebasNeue.otf) format("truetype");
-}
-.bebas{
-    font-family: 'Bebas Neue', sans-serif;
-}
+
 .white{
     color:#fff;
 }
@@ -192,6 +189,11 @@ footer{
         background: #dcdedd!important;
         text-align: center!important; 
     }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        width: 100px;
+    }
 }
 .img-responsive-2 {
     max-width: 100%;
@@ -207,10 +209,8 @@ footer{
 .f-z-15{
     font-size: 15px!important;
 }
-
-.gothan-liger{
-    font-family: Gothamy, Gotham-Book, Arial, sans-serif;
-    font-weight: lighter;
+.may{
+    text-transform:uppercase;
 }
 .serve-text{
     text-transform:uppercase;
@@ -226,6 +226,18 @@ footer{
 }
 .f-s60{
     font-size: 60px;
+}
+.p-top-15{
+    padding-top: 15%;
+}
+.p-b-5{
+    padding-bottom: 5%;
+}
+.black{
+    color: #000!important;
+}
+.bold{
+    font-weight: bold;
 }
 
 @font-face {
@@ -255,4 +267,19 @@ footer{
  font-weight: bold;
  font-style: italic;
  font-variant: normal;
+}
+.gothan-liger{
+    font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+    font-weight: lighter;
+}
+.gothan{
+    font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../font/bebas/BebasNeue.otf) format("truetype");
+}
+.bebas{
+    font-family: 'Bebas Neue', sans-serif;
 }
