@@ -82,22 +82,22 @@
       <div class="container pd-t-25">
         <br><br>
         <div class="center">
-          <img class="img-responsive" src="img/g.png">
+          <img class="img-responsive" width="300" src="img/g.png">
         </div>
         <hr>
         <br>
         <div class="row">
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card h-100">
-              <div class="card-body text-center">
+              <div class="card-body-2 text-center">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <br>
                 <br>
-                <h5 class="card-title m-0 gothan bold">
+                <h5 class="card-title m-0 gothan bold fz15">
                   ADDRESS
                 </h5>
                 <br>
-                <p class="text-muted gothan-liger">
+                <p class="text-muted gothan-liger fz14">
                   1325 NE 1st Ave 
                   <br>
                   Miami, FL 33132
@@ -107,15 +107,15 @@
           </div>
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card h-100">
-              <div class="card-body text-center">
+              <div class="card-body-2 text-center">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
                 <br>
                 <br>
-                <h5 class="card-title m-0 gothan bold">
+                <h5 class="card-title m-0 gothan bold fz15">
                   PHONE
                 </h5>
                 <br>
-                <p class="text-muted gothan-liger">
+                <p class="text-muted gothan-liger fz14">
                   (786) 483-8578
                 </p>
               </div>
@@ -123,15 +123,15 @@
           </div>
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card h-100">
-              <div class="card-body text-center">
+              <div class="card-body-2 text-center">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <br>
                 <br>
-                <h5 class="card-title m-0 gothan bold">
+                <h5 class="card-title m-0 gothan bold fz15">
                   EMAIL
                 </h5>
                 <br>
-                <p class="text-muted gothan-liger ">
+                <p class="text-muted gothan-liger fz14">
                   info@speedhousecyclingstudio.com
                   <br>
                   marketing@speedhousecyclingstudio.comv
@@ -145,15 +145,11 @@
     </section>
 
     <section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed" style="pointer-events: none;"></iframe>
-      <br>
-      <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
+      <div id="map"></div>
     </section>
 
     <section class="content-section-a">
-      <div class="container">
+      <div class="container p-150-form">
         <div class="row">
           <div class="col-md-6 p-top-10">
             <input type="email" class="form-control" placeholder="Your name">
@@ -234,6 +230,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="js/map.js"></script>
 
   </body>
 
