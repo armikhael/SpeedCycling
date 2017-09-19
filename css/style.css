@@ -446,3 +446,11 @@ footer{
         display: none; 
     }
 }
+.display-none-nav{
+    display: none;
+}
+@media (max-width: 950px) {
+    .display-none-nav{
+        display: block; 
+    }
+}
