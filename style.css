@@ -2,7 +2,7 @@ nav{
     font-family: 'Ostrich Sans Black', arial;
 }
 body{
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 a{
     color: #212121;
@@ -90,7 +90,6 @@ footer{
 }
 .circle-sc{
   border: 4px solid #efe764;
-  margin-top: 20px;
 }
 #recent-works {
     padding-bottom: 0px;
@@ -103,7 +102,11 @@ footer{
 .img-init-sq {
     width: 100%;
 }
-
+@media (max-width: 900px) {
+  .img-init-sq {
+    width: auto;
+    }
+}
 .se {
     position: absolute;
     top: 10%;
@@ -337,10 +340,6 @@ footer{
   opacity: 1;
 }
 
-.portfolio-item{
-        padding-top: 20px;
-}
-
 .text {
     color: white;
     font-size: 12px;
@@ -404,27 +403,4 @@ footer{
         .back-c-r{
             background: #262625!important;
         }
-        .display-none{
-        display: none;
-    }
-
-}
-
-@media (max-width: 700px) {
-  .se {
-        position: relative;
-        top: 0;
-        text-align: center;
-        right: 0%;
-        left: 0;
-        display: block;
-        margin-top: 0px;
-        color: #fff;
-        background: #262625;
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
-    .display-none{
-        display: none;
-    }
 }
