@@ -150,29 +150,33 @@
     </section>
 
     <section class="content-section-a">
-      <div class="container p-150-form">
-        <div class="row">
-          <div class="col-md-6 p-top-10">
-            <input type="email" class="form-control" placeholder="Your name">
+      <form id="fo3" action="sendemail.php" METHOD="post" name="fo3">
+        <div class="container p-150-form">
+          <div class="row">
+            <div class="col-md-6 p-top-10">
+              <input type="text" name="name" class="form-control" placeholder="Your name">
+            </div>
+            <div class="col-md-6 p-top-10">
+              <input type="email" name="email" class="form-control" placeholder="Your Email">
+            </div>
           </div>
-          <div class="col-md-6 p-top-10">
-            <input type="email" class="form-control" placeholder="Your Email">
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <textarea name="message" class="form-control" rows="8" placeholder="Your Message"></textarea>
+            </div>  
           </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-md-12">
-            <textarea class="form-control" rows="8" placeholder="Your Message"></textarea>
-          </div>  
-        </div>
-        <br><br>
- 
-          <div class="center">
-            <button type="button" class="btn btn-default btn-color gothan-liger may">Submit Now</button>
-          </div>  
+          <br><br>
+  
+            <div class="center">
+              <button type="submit" class="btn btn-default btn-color gothan-liger may">Submit Now</button>
+            </div>  
 
-      </div>
-      <!-- /.container -->
+        </div>
+        <!-- /.container -->
+      </form>
+      <br><br>
+      <div id="result"></div>
     </section>
 
     <!-- Footer -->
@@ -185,27 +189,27 @@
           <div class="col-md-8">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#">Home</a>
+                <a class="c-withe gothan-liger" href="home.html">Home</a>
               </li>
               <li class="footer-menu-divider list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#about">Instructors</a>
+                <a class="c-withe gothan-liger" href="meettheteam.html#">Instructors</a>
               </li>
               <li class="footer-menu-divider list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#services">Pricing</a>
+                <a class="c-withe gothan-liger" href="pricing.html">Pricing</a>
               </li>
               <li class="footer-menu-divider list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#contact">Schedule</a>
+                <a class="c-withe gothan-liger" href="schedule.html">Schedule</a>
               </li>
               <li class="footer-menu-divider list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#contact">Get in Touch</a>
+                <a class="c-withe gothan-liger" href="getintouch.html">Get in Touch</a>
               </li>
               <li class="footer-menu-divider list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a class="c-withe gothan-liger" href="#contact">Sign Up/Login</a>
+                <a class="c-withe gothan-liger" href="singup.html">Sign Up/Login</a>
               </li>
             </ul>
           </div>
@@ -223,7 +227,10 @@
               <img src="img/google-play-badge.png">
             </div>
           </div>
-        </div><p class="copyright text-muted small gothan-liger">Terms & Conditions  |  Legals <span style="float: right;">Designed & Developed by The Pink Tank Lab</span></p>
+        </div>
+        <p class="copyright text-muted small gothan-liger center-r">
+          Terms & Conditions  |  Legals 
+          <span class="f-r-r-f">Designed & Developed by The Pink Tank Lab</span></p>
       </div>
     </footer>
 
@@ -234,6 +241,32 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD_w4CVBbPY4O4ZSqAZARP3CFiE3DzN2I"></script>
     <script src="js/map.js"></script>
+
+    <script language="javascript">
+          $(document).ready(function() {
+            // esto es un loader y es opcional
+              $().ajaxStart(function() {
+                  $('#loading').show();
+                  $('#result').hide();
+              }).ajaxStop(function() {
+                  $('#loading').hide();
+                  $('#result').fadeIn('slow');
+              });
+            // Aqui interceptamos el evento submit
+              $('#form, #fat, #fo3').submit(function() {
+                  $.ajax({
+                      type: 'POST',
+                      url: $(this).attr('action'),
+                      data: $(this).serialize(),
+                      success: function(data) {
+                          $('#result').html(data);
+                          $("#fo3")[0].reset();
+                      }
+                  })
+                  return false;
+              }); 
+          })  
+    </script>
 
   </body>
 
