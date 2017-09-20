@@ -425,6 +425,11 @@ footer{
     .f-r-r-f{
     float: none;
 }
+.bebas-title {
+    font-weight: 400;
+    font-size: 4em!important;
+    font-family: 'Bebas Neue', sans-serif;
+}
 
 }
 
